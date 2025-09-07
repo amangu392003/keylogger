@@ -76,7 +76,6 @@ Runs all steps in sequence: keylogging, feature extraction, anomaly detection, v
 - For Windows:  
   Use the standard command prompt or Git Bash to run scripts and Makefile.
 - If the plot doesn't appear, ensure `matplotlib` is installed.
-- Always export notebooks as `.py` files before using Makefile automation.
 
 ---
 
