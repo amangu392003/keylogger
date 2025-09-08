@@ -10,7 +10,7 @@ def detect_anomalies(features_df, profile, threshold=3):
             anomalies.append({'timestamp': row['timestamp'], 'flight_time': row['flight_time']})
     return anomalies
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     features_df = pd.read_csv("features.csv")
     profile = {'mean_flight_time': features_df['flight_time'].mean(), 'std_flight_time': features_df['flight_time'].std()}
     anomalies = detect_anomalies(features_df, profile)
